@@ -68,7 +68,7 @@ def processData():
         print('Python Script running in test mode')
         mongo_url='mongodb://heroku_d51wj820:9hvc7hpct55s3b7a89hf53n53v@ds127624.mlab.com:27624/heroku_d51wj820'
     client = MongoClient(mongo_url)
-    db = client.heroku_d51wj820
+    db = client.heroku_zvgjdqnx
     users =db.users
     for user in users.find():
         patreon_login=user.get('patreonLogin',False)
